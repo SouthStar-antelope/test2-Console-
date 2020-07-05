@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二杯半价</title>
+    <script>
+        var price = 50; //单价
+        var count = prompt(price+"块钱一杯，您要几杯？"); //数量
+        
+        if (isNaN(count)){
+            alert("请输入一个阿拉伯数字");
+        }
+       else{
+            if (count%2==0) {
+                totalprice=count*price*0.75;
+            }
+            else {
+                totalprice=count*price*0.75+price/4;
+            }
+            alert("总价"+totalprice) 
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
